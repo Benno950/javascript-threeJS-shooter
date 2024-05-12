@@ -5,7 +5,7 @@
 This code is now completed. I comment my code so that it is more easily understandable.
 All my sources of tutorials and snippets I used can be found at the bottom of each script file. 
 
-If you encounter any other errors, you can reach me at **499142@student.fontys.nl**
+If you encounter any other errors, you can reach me at git.
 
 ## Name
 **Project JavaScript Shooter**
@@ -22,7 +22,7 @@ Start the game by opening the .html file in your browser running on a local serv
 **Warning:** You can only play this game when you run a local server. If you do not do this, the browser will fail to load the three.js plugin. 
 
 ## Support
-**499142@student.fontys.nl**
+Send me a message on git.
 
 ## Roadmap
 + **November 2023:** Setting up the base scene
