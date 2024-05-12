@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Tomorrow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap'); /* Import Fonts */
+
+
+body {
+  margin: 12px; /* Eliminates the annoying default HTML margin of 8 */
+  font-family: 'Oxygen', Arial, sans-serif; /* Arial is a falllback font */
+  background-color: khaki;
+  color: white;
+
+}
+
+
+.vertical-ui {
+  display: flex;
+  align-items: flex-end;
+  user-select: none; /* Disables the annoying blue box forming when you click. */
+ 
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+h1 {
+  font-size: 32px;
+  margin: 0;
+}
+
+p {
+  font-size: 32px;
+  margin: 0;
+}
+
+/* All cursor data goes here */
+#game-crosshair {
+  width: 30vh;
+
+  fill: red; /* vector colour */
+  position: fixed; /* Sticks to the mouse, absolute causes it to break on scrolling */
+
+  mix-blend-mode: lighten; /* Blend modes just like in photoshop */
+
+  /* transition: 0.2s ease-out; easing effect disabled because of game responsiveness */
+
+  transform: translate(-50%, -50%);
+  z-index: 99; /* Makes the cursor overlap everything below this z-index*/
+
+  pointer-events: none; /* This stops the div from blocking links and animations below the cursor */
+
+  animation: game-crosshair-animation 2s infinite linear;
+}
+
+@keyframes game-crosshair-animation {
+  0% {opacity: 100%;  fill: white;}
+  50% {opacity: 80%;   fill: #DD4521;}
+  100% {opacity: 100%;  fill: white;}
+}

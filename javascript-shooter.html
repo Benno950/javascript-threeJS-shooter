@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    
+  <head>
+
+    <title>Javascript Shooter Game</title>
+
+    <link href="styles/shooter-game-style.css" type="text/css" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta charset="UTF-8"> <!-- Fixed character related issues -->
+
+    <!-- Import the Three.js module to the server -->
+    <script type="importmap"> 
+      {
+          "imports": {
+              "three": "https://unpkg.com/three@0.138.0/build/three.module.js"
+          }
+      }
+    </script>
+
+    <!-- <link rel="icon" type="image/x-icon" href="images/favicon.ico"> -->
+  
+  </head>
+
+  <body>
+    
+    <header id="game-overlay">
+
+      <?xml version="1.0" encoding="UTF-8"?>
+      <svg id="game-crosshair" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 322.44 341.09">
+        <circle class="cls-1" cx="159.4" cy="173.27" r="16.13"/>
+        <path class="cls-1" d="m287.4,173.27c0-25.14-7.25-48.6-19.79-68.38l54.83-51.77-40.03-32.91-50.1,47.85c-20.69-14.37-45.82-22.79-72.91-22.79-21.31,0-41.4,5.21-59.07,14.42L52.88,0,7.4,38.17l49.61,58.29c-16.08,21.4-25.61,47.99-25.61,76.81,0,24.99,7.16,48.31,19.55,68.01L0,289.95l33.03,43.63,51.9-56.2c20.98,15.04,46.7,23.89,74.47,23.89,21.47,0,41.7-5.29,59.47-14.63l45.14,54.45,41.37-35.09-48.66-49.58c19.13-22.37,30.68-51.42,30.68-83.15Zm-86.64,92.1c-12.62,5.68-26.62,8.84-41.36,8.84-20.01,0-38.65-5.82-54.33-15.85-14.14-9.05-25.88-21.53-34.03-36.26-8.02-14.47-12.58-31.11-12.58-48.83,0-20.52,6.12-39.61,16.65-55.54,10.4-15.77,25.12-28.45,42.46-36.35,12.74-5.81,26.91-9.05,41.83-9.05,19.37,0,37.46,5.46,52.83,14.91,14.64,9.01,26.81,21.65,35.24,36.67,8.2,14.59,12.87,31.43,12.87,49.36,0,23.13-7.78,44.44-20.87,61.46-10.11,13.16-23.39,23.76-38.71,30.64Z"/>
+      </svg>
+
+      <div class="vertical-ui">
+        <h1>Score:&nbsp;</h1> <!-- &nbsp will add a space -->
+        <p id="score-points">0</p>
+      </div>
+
+    </header>
+
+    <main id="game-scene"> <!-- The main game area -->
+
+      <script type="module" src="javascript/shooter-game-init.js"></script> <!-- Import three.js scene -->
+
+    </main>
+
+
+
+    <footer> 
+
+    </footer>
+
+  </body>
+
+</html>
